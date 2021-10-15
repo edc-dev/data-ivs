@@ -1,0 +1,156 @@
+{
+  "version": 8,
+  "name": "vodovodomis",
+  "center": [16.694112, 43.443665],
+  "zoom": 6,
+  "glyphs": "{fontstack}/{range}",
+  "sources": {
+    "mjernaZona": {
+      "type": "geojson",
+      "url" :"/dir/mjernaZona"
+    },
+    "vodospremnik": {
+      "type": "geojson",
+      "url" :"/dir/vodospremnik"
+    },
+    "vod": {
+      "type": "geojson",
+      "url" :"/dir/vod"
+    },
+    "mjernoMjesto": {
+      "type": "vector",
+      "url" :"https://gis.edc.hr/imagisth/threport/devices_all"
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "rgba(0,0,0,0)"
+      }
+    },
+    {
+      "id": "cjevovod",
+      "type": "line",
+      "source": "vod",
+      "paint": {
+        "line-color": "blue",
+        "line-width": 1.5
+      }
+    },
+    {
+      "id": "mjernaZona-outline",
+      "type": "line",
+      "source": "mjernaZona",
+      "paint": {
+        "line-color": "black"
+      }
+    },
+    {
+      "id": "mjernaZona-Zagrad",
+      "type": "fill",
+      "source": "mjernaZona",
+      "filter": ["==", "sustav", "Zagrad"],
+      "paint": {
+        "fill-color": "rgba(255,255,0,0.192)"
+      }
+    },
+    {
+      "id": "mjernaZona-Studenci",
+      "type": "fill",
+      "source": "mjernaZona",
+      "filter": ["==", "sustav", "Studenci"],
+      "paint": {
+        "fill-color": "rgba(255,0,0,0.192)"
+      }
+    },
+    {
+      "id": "mjernaZona-Ruda",
+      "type": "fill",
+      "source": "mjernaZona",
+      "filter": ["==", "sustav", "Ruda"],
+      "paint": {
+        "fill-color": "rgba(0,128,0,0.192)"
+      }
+    },
+    {
+      "id": "mjernaZona-Kraljevac",
+      "type": "fill",
+      "source": "mjernaZona",
+      "filter": ["==", "sustav", "Kraljevac"],
+      "paint": {
+        "fill-color": "rgba(0,255,255,0.192)"
+      }
+    },
+    {
+      "id": "mjernaZona-label",
+      "type": "symbol",
+      "source": "mjernaZona",
+      "layout": {
+        "text-field": "{naziv}",
+        "text-size": 12,
+        "text-font": ["Arial Normal", "sans-serif Normal"]
+      }
+    },
+    {
+      "id": "vodospremnik-icon",
+      "type": "symbol",
+      "source": "vodospremnik",
+      "layout": {
+        "icon-image": "kvadrat – plavi",
+        "icon-size": 0.2
+      }
+    },
+    {
+      "id": "vodospremnik-label",
+      "type": "symbol",
+      "source": "vodospremnik",
+      "minzoom": 12,
+      "layout": {
+        "text-field": ["concat", ["get", "Ime"], "\n", ["get", "Hdno_mnm"]],
+        "text-size": 12,
+        "text-font": ["Arial Normal", "sans-serif Normal"],
+        "text-offset": [0, -2]
+      },
+      "paint": {
+        "text-color": "black",
+        "text-halo-blur": 1,
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 3
+      }
+    },
+    {
+      "id": "mjernoMjesto-icon",
+      "type": "symbol",
+      "source": "mjernoMjesto",
+      "layout": {
+        "icon-image": "th",
+        "icon-size": 0.8
+      }
+    },
+    {
+      "id": "mjernoMjesto-label",
+      "type": "symbol",
+      "source": "mjernoMjesto",
+      "minzoom": 12,
+      "layout": {
+        "text-field": [
+          "concat",
+          ["get", "device_name"],
+          "\n",
+          ["get", "device_id"]
+        ],
+        "text-size": 12,
+        "text-font": ["Arial Normal", "sans-serif Normal"],
+        "text-offset": [0, -2]
+      },
+      "paint": {
+        "text-color": "black",
+        "text-halo-blur": 0.9,
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 7
+      }
+    }
+  ]
+}

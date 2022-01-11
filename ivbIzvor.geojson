@@ -1,0 +1,156 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "geometry": { "type": "Point", "coordinates": [13.992524, 45.122513] },
+      "properties": {
+        "asset_id": "R-1",
+        "zasset_id": "#I",
+        "gndlvl": 405,
+        "zgndlvl": "#D",
+        "node_id": "R-1",
+        "UT1": "R-1",
+        "UT5": "AglomeracijaPazin",
+        "zUT5": "ED",
+        "UT6": "GROMACA",
+        "x": 302735.12,
+        "zx": "#I",
+        "y": 5001119.53,
+        "zy": "#I",
+        "z": 405,
+        "zz": "#I",
+        "Klasa": "wfixh"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "geometry": { "type": "Point", "coordinates": [13.936323, 45.093859] },
+      "properties": {
+        "asset_id": "R-2",
+        "zasset_id": "#I",
+        "gndlvl": 370,
+        "zgndlvl": "#D",
+        "node_id": "R-2",
+        "UT1": "R-2",
+        "UT5": "AglomeracijaPazin",
+        "zUT5": "ED",
+        "UT6": "GRADINA",
+        "x": 298212.81,
+        "zx": "#I",
+        "y": 4998074.14,
+        "zy": "#I",
+        "z": 370,
+        "zz": "#I",
+        "Klasa": "wfixh"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "geometry": { "type": "Point", "coordinates": [13.917942, 45.338859] },
+      "properties": {
+        "area": "BUZET-15",
+        "asset_id": "ZAHVATBUTONIGA",
+        "zasset_id": "#I",
+        "gndlvl": 35,
+        "zgndlvl": "#D",
+        "node_id": "ZAHVATBUTONIGA",
+        "UT1": "ZAHVATBUTONIGA",
+        "UT5": "AglomeracijaPazin",
+        "zUT5": "ED",
+        "UT6": "BUTONIGA",
+        "x": 297637.46,
+        "zx": "#I",
+        "y": 5025345.65,
+        "zy": "#I",
+        "z": 35,
+        "zz": "#I",
+        "Klasa": "wfixh"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "geometry": { "type": "Point", "coordinates": [13.703336, 45.343729] },
+      "properties": {
+        "area": "POREČ-1",
+        "asset_id": "IZVOR_GRADOLE",
+        "zasset_id": "#I",
+        "gndlvl": 21,
+        "zgndlvl": "#D",
+        "node_id": "IZVOR_GRADOLE",
+        "znode_id": "ED",
+        "zUT1": "#I",
+        "UT2": "IZVOR_GRADOLE",
+        "UT6": "GRADOLE",
+        "x": 280837.2,
+        "zx": "#I",
+        "y": 5026448.75,
+        "zy": "#I",
+        "z": 21,
+        "zz": "#I",
+        "Klasa": "wfixh"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "geometry": { "type": "Point", "coordinates": [13.887922, 45.379703] },
+      "properties": {
+        "asset_id": "IZVOR_BULAZ",
+        "zasset_id": "#I",
+        "gndlvl": 21,
+        "zgndlvl": "#D",
+        "node_id": "IZVOR_BULAZ",
+        "znode_id": "ED",
+        "zUT1": "#I",
+        "UT2": "IZVOR_BULAZ",
+        "x": 295432.05,
+        "zx": "#I",
+        "y": 5029960.38,
+        "zy": "#I",
+        "z": 21,
+        "zz": "#I",
+        "Klasa": "wfixh"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6,
+      "geometry": { "type": "Point", "coordinates": [13.841762, 45.092988] },
+      "properties": {
+        "gndlvl": 260,
+        "zgndlvl": "#D",
+        "node_id": "PAZ-02620",
+        "x": 290766.68,
+        "y": 4998217.74,
+        "z": 260,
+        "zz": "ED",
+        "Klasa": "wfixh"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "geometry": { "type": "Point", "coordinates": [13.976796, 45.400446] },
+      "properties": {
+        "area": "BUZET-5",
+        "asset_id": "IZVOR_SV.IVAN",
+        "zasset_id": "ED",
+        "gndlvl": 60.5,
+        "zgndlvl": "#D",
+        "node_id": "IZVOR_SV.IVAN",
+        "znode_id": "ED",
+        "UT6": "SV.IVAN",
+        "x": 302464.59,
+        "y": 5032043.27,
+        "z": 60.5,
+        "zz": "ED",
+        "Klasa": "wfixh"
+      }
+    }
+  ]
+}
